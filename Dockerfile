@@ -1,5 +1,5 @@
 FROM alpine:3.5
-MAINTAINER Lumos Labs <ops@lumoslabs.com>
+MAINTAINER Albert Dixon <albert@dixon.rocks>
 
 EXPOSE 9913
 ENTRYPOINT ["/sbin/tini", "--", "su-exec", "nobody", "/bin/nginx-vts-exporter"]
